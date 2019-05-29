@@ -1,0 +1,156 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.form__input {
+    padding: 15px 0;
+    padding-left: 15px;
+    margin-bottom: 15px;
+
+    width: 80%;
+
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    color: $white;
+    opacity: 0.6;
+
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 2px solid transparent;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form__input::placeholder {
+    padding: 0;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: left;
+    color: $white;
+    opacity: 0.6;
+}
+
+.form__input:focus {
+    opacity: 0.6;
+
+    color: $white;
+    border: 2px solid $white;
+}
+
+.form__btn {
+    padding: 15px;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    color: $blue;
+
+    cursor: pointer;
+
+    background-color: $white;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form--free {
+    padding-bottom: 40px;
+}
+
+.form__btn:hover {
+    color: $white;
+    border: 2px solid $white;
+    background-color: $blue;
+}
+
+.form__btn:active {
+    color: $blue;
+
+    background-color: #a1c2f0;
+}
+
+@media (min-width: $tablet-width) {    // Версия для планшета
+    .form {
+        margin: 0 15%;
+        flex-direction: row;
+    }
+
+    .form__input {
+        padding: 15px 0;
+        padding-left: 15px;
+        margin: 0;
+        margin-right: 20px;
+
+        width: 100%;
+    }
+
+    .form__btn {
+        padding: 15px;
+
+        white-space: nowrap;
+        font-size: 18px;
+    }
+
+    .form--free {
+        padding-bottom: 50px;
+    }
+}
+
+@media (min-width: $desktop-width) {   //   Версия для компа
+    .form {
+        margin: 0;
+        margin-right: 8%;
+        flex-direction: row;
+    }
+
+    .form--free {
+        margin: 0;
+        margin-left: 18%;
+        margin-right: 11%;
+        padding-bottom: 100px;
+    }
+
+    .form__input {
+        padding: 15px 0;
+        padding-left: 15px;
+        margin: 0;
+        margin-right: 18px;
+
+        width: 100%;
+
+        font-size: 18px;
+        line-height: 20px;
+        text-align: left;
+    }
+
+    .form__input--free {
+        margin-right: 28px;
+    }
+
+    .form__btn {
+        padding: 15px;
+
+        white-space: nowrap;
+        font-size: 18px;
+        line-height: 20px;
+        text-align: center;
+        color: $blue;
+
+        background-color: $white;
+        border-radius: 5px;
+    }
+
+    .form__btn--free {
+        padding: 15px 25px;
+    }
+}
+

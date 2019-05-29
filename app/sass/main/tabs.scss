@@ -1,0 +1,261 @@
+.tabs {
+  width: 100%;
+  max-width: 1110px;
+}
+
+/* Стили для списка вкладок */
+.tab-header {
+  margin: 0;
+  padding-left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  list-style: none;
+  font-size: 0;
+}
+
+/* Стили для вкладки */
+.tab-header__item {
+  position: relative;
+  padding: 25px 50px;
+
+  color: $black;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.tab-header__item::before {
+  position: absolute;
+  content: "";
+  left: 30px;
+  top: 15px;
+
+  width: 30px;
+  height: 24px;
+
+  background-image: url("../img/icon-tab.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Стили для активной вкладки */
+.tab-header__item.active {
+
+  position: relative;
+  top: 1px;
+  border-color: $blue;
+
+}
+
+/* Стиль для списка контейнеров с содержимым вкладок */
+.tab-content {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Стили для контейнера с содержимым вкладки */
+.tab-content__item {
+  padding: 0 40px;
+  display: none;
+  border-top: 1px solid $gray;
+}
+
+/* Стили для активного контейнера вкладки */
+.tab-content__item.active {
+  display: block;
+}
+
+.tab__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.tab__container:nth-of-type(2) {
+  margin-bottom: 50px;
+}
+
+.tab__title-wrapper {
+  margin: 0;
+  padding: 0;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.tab__title {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 500;
+  font-size: 30px;
+ }
+
+ .tab__text-wrapper {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+ }
+
+ .tab__text {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  color: $black;
+ }
+
+ .tab__list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+
+  list-style: none;
+ }
+
+ .tab__item {
+  margin: 0;
+  padding: 0;
+ }
+
+ .tab__item-text {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+  padding-left: 30px;
+  padding-bottom: 30px;
+
+  font-weight: 300;
+  font-size: 18px;
+  color: $black;
+ }
+
+ .tab__item-text::before {
+  position: absolute;
+  content: "";
+
+  left: 0;
+  top: 0;
+
+  width: 22px;
+  height: 22px;
+
+  background-image: url("../img/chek.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+ }
+
+ .tab__image {
+  width: 100%;
+  height: auto;
+ }
+
+@media (min-width: $desktop-width) {    //    Версия для компа
+  /* Стили для списка вкладок */
+  .tab-header {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+  }
+
+  /* Стили для вкладки */
+  .tab-header__item {
+    position: relative;
+    padding: 25px 50px;
+    padding-left: 50px;
+    margin-right: 5px;
+
+    font-size: 18px;
+    color: $black;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+  }
+
+  .tab-header__item::before {
+    left: 10px;
+    top: 20px;
+  }
+
+  /* Стили для активной вкладки */
+  .tab-header__item.active {
+    position: relative;
+    top: 1px;
+    border-color: $blue;
+  }
+
+  .tab-content__item {
+    padding: 0;
+  }
+
+  .tab__wrapper {
+    flex-direction: row;
+  }
+
+  .tab__container {
+      margin: 0;
+  }
+
+  .tab__container:nth-of-type(2) {
+      margin-top: 60px;
+      margin-bottom: 0;
+  }
+
+  .tab__title-wrapper {
+    margin-top: 70px;
+    margin-bottom: 0; 
+  }
+
+  .tab__title {
+      font-size: 30px;
+      line-height: 80px;
+  }
+
+  .tab__text-wrapper {
+    margin-bottom: 50px;
+  }
+
+  .tab__text {
+      font-size: 18px;
+      line-height: 32px;
+  }
+
+  .tab__item-text {
+      margin: 0;
+      padding: 0;
+      padding-bottom: 20px;
+      padding-left: 45px;
+
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 32px;
+  }
+
+  .tab__item-text::before {
+      position: absolute;
+      content: "";
+
+      left: 4px;
+      top: 3px;
+
+      width: 22px;
+      height: 22px;
+
+      background-image: url("../img/chek.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+
+  .tab__image {
+      width: 750px;
+      height: auto;
+  }
+
+}

@@ -1,0 +1,38 @@
+.startup {
+  background-color: $light-gray;
+}
+
+.startup__title-wrapper {
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.startup__title {
+  margin: 0;
+
+  font-weight: 500;
+  font-size: 30px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .startup__title-wrapper {
+    margin-bottom: 60px;
+  }
+
+  .startup__title {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .startup__title-wrapper {
+    margin: 0;
+    margin-bottom: 70px;
+  }
+  
+  .startup__title {
+    font-size: 40px;
+    line-height: 112px;
+  }
+}

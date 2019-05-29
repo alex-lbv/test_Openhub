@@ -1,0 +1,141 @@
+.tasks__wrapper {
+  margin: 25px auto;
+
+  display: flex;
+  flex-direction: column;
+
+  border-top: 1px solid $gray;
+  border-bottom: 1px solid $gray;
+}
+
+.tasks__container {
+  margin-bottom: 25px;
+
+  text-align: center;
+}
+
+.tasks__title-wrapper {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.tasks__title {
+  margin: 0;
+  
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.tasks__text-wrapper {
+  margin: 0 5%;
+  margin-bottom: 40px;
+}
+
+.tasks__text {
+  margin: 0;
+
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.tasks__images {
+  margin: 0 auto;
+}
+
+.tasks__picture {
+  width: 100%;
+  height: auto; 
+}
+
+.tasks__link-wrapper {
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.tasks__link {
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {   //  Версия для планшета
+  .tasks__title-wrapper {
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+
+  .tasks__title {
+    font-size: 35px;
+  }
+
+  .tasks__text-wrapper {
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  
+  .tasks__text {
+    font-size: 23px;
+  }
+
+  .tasks__picture {
+    width: 100%;
+    height: auto; 
+  }
+
+  .tasks__container {
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {   //  Версия для компа
+  .tasks__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin: 50px 0;
+  }
+  
+  .tasks__container {   
+    margin-bottom: 90px;
+    
+    text-align: left;
+  }
+  
+  .tasks__title-wrapper {
+    margin: 0;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+
+  .tasks__title {
+    font-size: 40px;
+    line-height: 112px;
+  }
+
+  .tasks__text-wrapper {
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  
+  .tasks__text {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 32px;
+  }
+  
+  .tasks__images {
+    margin: 0;
+    padding-top: 25px;
+  }
+
+  .tasks__picture {
+    width: 650px;
+    height: 470px; 
+    transform: translateX(45px);
+  }
+
+  .tasks__link-wrapper {
+    margin: 0;
+  }
+  
+}

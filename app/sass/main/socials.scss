@@ -1,0 +1,129 @@
+.socials {
+    max-width: 320px;
+    margin: 0;
+    margin-left: 5%;
+}
+
+.socials__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    margin: 0;
+    padding: 0;
+
+    text-align: left;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    list-style: none;
+}
+
+.socials__item {
+    margin-bottom: 10px;
+}
+
+.socials__item:last-of-type {
+    margin-bottom: 25px;
+} 
+
+.socials__link {
+    font-size: 18px;
+    text-decoration: none;
+    color: $dark-gray;
+}
+
+.socials__icon-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.socials__icon-item {
+    margin-right: 22px;
+    margin-bottom: 40px;
+}
+
+.socials__icon-item:last-of-type {
+    margin-right: 0;
+}
+
+.socials__image {
+    width: 30px;
+    height: 30px;
+    fill: $dark-gray;
+}
+
+@media (min-width: $tablet-width) {     //Версия для планшета
+    .socials {
+        max-width: 768px;
+        margin: 0 50px;
+    }
+
+    .socials__list {
+        justify-content: space-between;
+        flex-direction: row;
+
+        margin: 0;
+        padding: 0;
+
+        max-width: 174px;
+
+        text-align: left;
+    }
+
+    .socials__item {
+        margin-bottom: 36px;
+        margin-right: 25px;
+    }
+
+    .socials__item:nth-of-type(2) {
+    //    margin-right: 35px;
+    }
+
+    .socials__icon-list{
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    
+        margin: 0;
+        padding: 0;
+    }
+    
+    .socials__icon-item {
+        // margin-right: 22px;
+    }
+
+    .socials__image {
+        width: 30px;
+        height: 30px;
+    }
+    
+}
+
+@media (min-width: $desktop-width) {    //Версия для компа
+    .socials {
+        max-width: 1200px;
+        margin: 0;
+    }
+
+    .socials__image {
+        width: 21px;
+        height: 21px;
+    }
+    
+    .socials__image:hover {
+        fill: $blue;
+    }
+    
+}
+

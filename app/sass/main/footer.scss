@@ -1,0 +1,150 @@
+.footer__wrapper {
+    padding-top: 50px;
+}
+
+.footer__container {
+    margin: 0;
+    margin-bottom: 50px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 3%;
+    padding: 0;
+
+    list-style: none;
+}
+
+.footer__image {
+    margin-bottom: 20px;
+    width: 140px;
+    height: 24px;
+}
+
+.footer__item-title {
+    margin: 0;
+    margin-bottom: 10px;
+
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: $dark-gray;
+}
+
+.footer__inner-list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.footer__inner-item {
+    margin-bottom: 10px;
+}
+
+ .footer__inner-link {
+    font-size: 15px;
+    text-decoration: none;
+    color: $dark-gray;
+}
+
+.footer__copyright {
+    text-align: center;
+    padding-bottom: 50px;
+}
+    
+.footer__copyright-text {
+    margin: 0;
+    
+    font-size: 12px;
+    color: $dark-gray;
+}
+
+@media (min-width: $tablet-width) {     //Версия для планшета
+    .footer__container {
+        margin: 0;
+    
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .footer__list {
+        margin: 0;
+        justify-content: space-around;
+    }
+
+    .footer__item {
+        margin-right: 40px;
+    }
+
+    .footer__item-title {
+        font-size: 17px;
+        white-space: nowrap;
+    }
+}
+
+@media (min-width: $desktop-width) {    //Версия для компа
+    .footer__wrapper {
+        padding-top: 90px;
+    }
+
+    .footer__container {
+        margin-bottom: 110px;
+    }
+
+    .footer__image {
+        margin-bottom: 36px;
+    }
+    
+    .footer__item {
+        margin-right: 88px;
+    }
+
+    .footer__item:last-of-type {
+        margin: 0;
+    }
+    
+    .footer__item-title {
+        margin: 0;
+        margin-bottom: 23px;
+    
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 2px;
+    }
+    
+    .footer__inner-item {
+        margin-bottom: 22px;
+    }
+    
+    .footer__inner-link {
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 2px;
+        text-decoration: none;
+    
+        color: $dark-gray;
+    }
+    
+    .footer__copyright {
+        margin: 0;
+        margin-bottom: 70px;
+        margin-left: 8%;
+    
+        text-align: left;
+    }
+    
+    .footer__copyright-text {
+        margin: 0;
+    
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: $dark-gray;
+    }
+}
