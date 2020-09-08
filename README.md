@@ -1,6 +1,18 @@
 # test_Openhub
-### Installation
+## Installation
 ```sh
-$ yarn / npm i
-$ gulp start / gulp build
+$ yarn
+```
+or
+```sh
+$ npm i
+```
+
+### dev mode
+```sh
+$ gulp start
+```
+### Production
+```sh
+$ gulp build
 ```
